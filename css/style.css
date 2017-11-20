@@ -118,7 +118,7 @@ ul > li > ol > li h3 {
     color: #ef5966;
 }
 
-.mosaic img {
+.mosaic > img {
     display: block;
     margin: 0;
     padding: 0;
@@ -131,7 +131,7 @@ ul > li > ol > li h3 {
 
 .mosaic_title1 {
     position: absolute;
-    top: 0;
+    top: 700px;
 }
 
 .right_images {
