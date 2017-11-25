@@ -3,7 +3,7 @@
     Author: Cezary Krawiec
 -->
 
-<html>
+<html lang="pl">
 
 <head>
     <title>CodersTrust - PSD to HTML</title>
@@ -12,8 +12,38 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="bjqs.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/bjqs-1.3.js"></script>
+
+    <script src="js/libs/jquery.secret-source.min.js"></script>
+
+    <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+            $('#banner-fade').bjqs({
+                height: 570,
+                width: 670,
+                responsive: true
+            });
+
+        });
+    </script>
+
+    <script>
+        jQuery(function($) {
+
+            $('.secret-source').secretSource({
+                includeTag: false
+            });
+
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -35,57 +65,49 @@
     <div style="clear: both;"></div>
     <!-- HEADER Start -->
     <div class="header_wrapper">
-        <div class="header">
-            <div class="logo">
-                <img width="145" src="images/logo.png" alt="logo">
-            </div>
-            <div class="header_top_menu">
-                <ul>
-                    <a href="#">
-                        <li class="blue">Register</li>
-                    </a>
-                    <a href="#">
-                        <li class="red">Sign In</li>
-                    </a>
-                    <a href="#">
-                        <li class="blue">Whislost<img src="images/b12.png" /></li>
-                    </a>
-                    <a href="#">
-                        <li class="red">Cart<img src="images/b13.png" /></li>
-                    </a>
-                </ul>
-            </div>
-            <div class="main_menu">
-                <ol>
-                    <li><a href="#">Art</a></li>
-                    <li><a href="#">Home &amp; Living</a>
-                        <ul>
-                            <li>
-                                <div class="menu_background">
-                                    <img src="images/menu_background.png" alt="">
-                                    <div class="menu_item">
-                                    <img width="100px" src="images/menu_photo.png" alt="">
-                                        <div class="menu_item_right"><h3>Item Name Here</h3>
+        <div class="logo">
+            <a href=""><img width="145" src="images/logo.png" alt="logo"></a>
+        </div>
+        <div class="header_top_menu">
+            <ul>
+                <li class="blue"><a href="#">Register</a></li>
+                <li class="red"><a href="#">Sign In</a></li>
+                <li class="blue"><a href="#">Whislost<img src="images/b12.png" alt="photo" /></a></li>
+                <li class="red"><a href="#">Cart<img src="images/b13.png" alt="photo"/></a></li>
+            </ul>
+        </div>
+        <div class="main_menu">
+            <ol>
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Home &amp; Living</a>
+                    <ul>
+                        <li>
+                            <div class="menu_background">
+                                <img src="images/menu_background.png" alt="">
+                                <div class="menu_item">
+                                    <img width="100" src="images/menu_photo.png" alt="">
+                                    <div class="menu_item_right">
+                                        <h3>Item Name Here</h3>
                                         <div style="clear:both;"></div>
-                                        <p>Lorem Ipsum is simply
-                                        dummy text</p>
+                                        <p>Lorem Ipsum is simply dummy text</p>
                                         <div style="clear:both;"></div>
-                                        <a href="#"><div class="item_button">More Detail</div></a>
-                                        </div>
+                                        <a href="#">
+                                            <div class="item_button">More Detail</div>
+                                        </a>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Jewelry</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">Vintage</a></li>
-                    <li><a href="#">Weddings</a></li>
-                    <li><a href="#">More</a></li>
-                </ol>
-            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Jewelry</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Vintage</a></li>
+                <li><a href="#">Weddings</a></li>
+                <li><a href="#">More</a></li>
+            </ol>
         </div>
     </div>
     <div style="clear: both;"></div>
@@ -94,7 +116,14 @@
         <div class="mosaic">
             <div class="left_images">
                 <div class="left_image_1">
-                    <img src="images/p1.png" alt="photo1">
+                    <div id="banner-fade">
+                        <ul class="bjqs">
+                            <li><img src="images/p11.png" alt=""></li>
+                            <li><img src="images/p13.jpg" alt=""></li>
+                            <li><img src="images/p12.jpg" alt=""></li>
+                            <li><img src="images/p14.jpg" alt=""></li>
+                        </ul>
+                    </div>
                     <div class="mosaic_title1">
                         <div class="mosaic_title_11">
                             <h1>men's wear</h1>
@@ -110,7 +139,7 @@
                 <div class="form">
                     <form>
                         <input type="text" placeholder="Search your product here ( e.g.: Silver diamond ring )" onfocus="this.placeholder=''" onblur="this.placeholder='Search your product here ( e.g.: Silver diamond ring )'">
-                        <input type="image" src="images/b6.png" alt="">
+                        <input type="image" src="images/b6.png" alt="SZUKAJ">
                     </form>
                 </div>
                 <div class="left_image2">
@@ -121,13 +150,13 @@
                             <h1>crafts</h1>
                         </div>
                         <a href="#"><img src="images/b4.png" alt=""></a>
-                        <a href="#"><img class="cart_button" src="images/b5.png" alt=""></a>
+                        <div class="cart_button"><a href="#"><img  src="images/b5.png" alt=""></a>
+                            <div class="add_to_cart"><img src="images/add_to_cart.png" alt=""></div>
+                        </div>
                         <div class="mosaic_title2_price">
                             <p class="price">&#36; 99.<sup>00</sup></p>
                         </div>
-                        <div class="add_to_cart"><img src="images/add_to_cart.png" alt=""></div>
                     </div>
-
                 </div>
             </div>
             <div class="right_images">
@@ -147,7 +176,9 @@
                             <h1>Baby Shop</h1>
                         </div>
                         <a href="#"><img src="images/b4.png" alt=""></a>
-                        <a href="#"><img src="images/b5.png" alt=""></a>
+                        <div class="cart_button"><a href="#"><img  src="images/b5.png" alt=""></a>
+                            <div class="add_to_cart"><img src="images/add_to_cart.png" alt=""></div>
+                        </div>
                         <div class="mosaic_title2_price">
                             <p class="price">&#36; 99.<sup>00</sup></p>
                         </div>
@@ -164,17 +195,17 @@
                 </div>
             </div>
         </div>
-        <div style="clear:both;"></div>
     </div>
+    <div style="clear:both;"></div>
 
     <!-- PORTFOLIO NEW Start -->
     <div class="portfolio_new_wrapper">
         <hr class="hr_1">
         <h1 class="blue_header">New Products</h1>
-        <hr class="hr_2">
+        <hr class="hr_new">
         <div class="nav_portfolio">
             <a href="#">
-                <div class="left_button"><img src="images/b7.png" alt=""></div>
+                <div class="left_blue_button"><img src="images/b7.png" alt=""></div>
             </a>
             <a href="#">
                 <div class="right_button"><img src="images/b8.png" alt=""></div>
@@ -190,7 +221,9 @@
                         <h1>Baby Shop</h1>
                     </div>
                     <a href="#"><img src="images/b4.png" alt=""></a>
-                    <a href="#"><img src="images/b5.png" alt=""></a>
+                    <div class="cart_button"><a href="#"><img  src="images/b5.png" alt=""></a>
+                        <div class="add_to_cart"><img src="images/add_to_cart.png" alt=""></div>
+                    </div>
                     <div class="mosaic_title2_price">
                         <p class="price">&#36; 99.<sup>00</sup></p>
                     </div>
@@ -199,11 +232,12 @@
             <img src="images/np3.png" alt="">
         </div>
     </div>
+    <div style="clear:both;"></div>
     <!-- PORTFOLIO FEATURED Start -->
     <div class="portfolio_featured_wrapper">
         <hr class="hr_1">
         <h1 class="blue_header">Featured Products</h1>
-        <hr class="hr_3">
+        <hr class="hr_featured">
         <div class="nav_portfolio">
             <a href="#">
                 <div class="left_red_button"><img src="images/b7.png" alt=""></div>
@@ -305,13 +339,13 @@
     <div style="clear:both;"></div>
     <!-- AUTHOR Start -->
     <div class="author_wrapper">
-        <div class="author">
+        <div class="author_title">
             <hr class="hr_1">
             <h1 class="blue_header">Who We Are</h1>
-            <hr class="hr_4">
+            <hr class="hr_author">
             <div style="clear:both;"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula risus eros, in gravida neque mollis ut. Maecenas pretium nisi at neque auctor, porttitor lobortis orci gravida. Curabitur rutrum, ante a pharetra dignissim, neque massa varius ante, vel facilisis dolor nisi sed nisl. Integer vel diam quis elit tempus rutrum. Nullam ac mauris feugiat, dignissim neque vitae, interdum est. Duis pulvinar, est id laoreet ultrices, velit sem iaculis tortor, vulputate sagittis enim lectus at velit. Nunc sapien ante, imperdiet non arcu et, molestie elementum nibh. Aenean condimentum massa ac orci elementum euismod vel ac metus. Sed ullamcorper luctus lectus id semper. Suspendisse pulvinar, nisl et ultricies lacinia, leo neque placerat risus, imperdiet elementum nulla magna at felis.</p>
         </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula risus eros, in gravida neque mollis ut. Maecenas pretium nisi at neque auctor, porttitor lobortis orci gravida. Curabitur rutrum, ante a pharetra dignissim, neque massa varius ante, vel facilisis dolor nisi sed nisl. Integer vel diam quis elit tempus rutrum. Nullam ac mauris feugiat, dignissim neque vitae, interdum est. Duis pulvinar, est id laoreet ultrices, velit sem iaculis tortor, vulputate sagittis enim lectus at velit. Nunc sapien ante, imperdiet non arcu et, molestie elementum nibh. Aenean condimentum massa ac orci elementum euismod vel ac metus. Sed ullamcorper luctus lectus id semper. Suspendisse pulvinar, nisl et ultricies lacinia, leo neque placerat risus, imperdiet elementum nulla magna at felis.</p>
     </div>
     <!-- REGISTER Start -->
     <div class="register_bar_wrapper">
@@ -339,7 +373,7 @@
             </li>
         </ul>
         <a href="#" class="register_button">
-                <h2>Register Now</h2>
+            <h2>Register Now</h2>
         </a>
     </div>
     <hr>
