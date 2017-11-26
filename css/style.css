@@ -397,18 +397,6 @@ ol > li > ul > li p {
     position: relative;
 }
 
-.mosaic_title_vertical {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.arrow {
-    position: absolute;
-    bottom: 295px;
-    right: 0;
-}
-
 .form {
     background-color: #f0626e;
     border-bottom: 4px solid #fff;
