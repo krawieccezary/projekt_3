@@ -631,6 +631,7 @@ input[type=image] {
     height: 54px;
     background-color: #fff;
     border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 .product_title a:nth-child(3) .featured_photo_button:hover {
@@ -647,7 +648,7 @@ input[type=image] {
 
 .featured_photo_price {
     float: left;
-    width: 104px;
+    width: 103px;
     height: 54px;
     background-color: #f0626e;
 }
