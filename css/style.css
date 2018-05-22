@@ -413,6 +413,7 @@ input[type=text] {
     margin: 50px 0 50px 50px;
     float: left;
     border: none;
+    outline: none;
 }
 
 input[type=image] {
